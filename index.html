@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKALOG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+    <a class="logo" href="#">
+    <img src="images/app-icon.gif" alt="はかろぐ">
+    <a/>
+    <nav class="nav" id="nav-menu">
+        <a href="#features">特徴</a>
+        <a href="#how-to-use">使い方</a>
+        <a href="#pricing">料金</a>
+        <a class="header-button" href="#start">アプリを始める</a>
+    </nav>
+    <button
+        class="menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+    >
+    ☰
+    </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+        <div class="hero_bg" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+            <p class="hero-catch">回収業務を「計量」から「データ活用」へ</p>
+
+            <h1>
+                HAKALOG
+                <span>データ活用が未来を拓く</span>
+            </h1>
+
+            <p class="hero-text">
+                回収・重量測定を、ひとつの体験へ。<br>
+                HAKALOGがダンボール回収の現場を可視化し、<br>
+                次の一手を確かなデータで導きます。
+            </p>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="features-grid">
+            <article class="feature-card js-reveal js-reveal--delay-1" >
+                <div class="feature-image">
+                    <img
+                    src="images/feature-capture-cardboard.png"
+                    alt="ダンボールをスマホで撮影している様子"
+                    >
+                    <h2>ダンボール撮影</h2>
+                </div>
+                    <p>回収時にスマホで撮影。現場の情報を手軽に記録できます。</p>
+            </article>
+
+            <article class="feature-card js-reveal js-reveal--delay-2">
+                <div class="feature-image">
+                    <img
+                    src="images/feature-data-dashboard.png"
+                    alt="回収データを管理するダッシュボード"
+                    >
+                    <h2>撮影データを管理</h2>
+                </div>
+                    <p>回収・重量測定のデータをまとめ、次の判断に活用できます。</p>
+            </article>
+            </div>
+                <!-- ChatBotはカード一覧の外に置く -->
+            <div class="chatbot-area">
+            <button
+                class="chatbot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="chatbot-window"
+            >
+                <span class="chatbot-toggle-icon" aria-hidden="true">💬</span>
+                チャットで相談
+            </button>
+
+            <section class="chatbot-window" id="chatbot-window" aria-label="HAKALOG チャット相談">
+                <div class="chatbot-header">
+                <div>
+                    <p class="chatbot-name">HAKALOGサポート</p>
+                    <p class="chatbot-status">オンライン</p>
+                </div>
+
+                <button class="chatbot-close" type="button" aria-label="チャットを閉じる">
+                    ×
+                </button>
+                </div>
+
+                <div class="chatbot-messages aria-live="polite" aria-label=""チャットメッセージ>
+                <div class="chatbot-message chatbot-message-bot">
+                    こんにちは。HAKALOGについてお気軽にご相談ください。
+                </div>
+                </div>
+
+                <form class="chatbot-form">
+                <label class="sr-only" for="chatbot-input">メッセージ</label>
+                <input
+                    id="chatbot-input"
+                    type="text"
+                    placeholder="質問を入力してください"
+                >
+                <button type="submit">送信</button>
+                </form>
+            </section>
+            </div>
+        </section>
+        <section class="start" id="start">
+    <div class="start-inner">
+        <div class="start-cars">
+        <img
+            class="start-car start-car-blue"
+            src="images/app-icon.gif"
+            alt="1号車"
+        >
+
+        <img
+            class="start-car start-car-orange"
+            src="images/app-icon.gif"
+            alt="2号車"
+        >
+
+        <img
+            class="start-car start-car-green"
+            src="images/app-icon.gif"
+            alt="3号車"
+        >
+        </div>
+
+        <div class="start-menu">
+        <h2>行き先メニュー</h2>
+
+        <a class="start-menu-item start-menu-video" href="#movie">
+            <span class="start-menu-number">1号車</span>
+            <span class="start-menu-text">使い方動画を見る</span>
+            <span class="start-menu-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="start-menu-item start-menu-feature" href="#how-to-use">
+            <span class="start-menu-number">2号車</span>
+            <span class="start-menu-text">HAKALOGでできることを知る</span>
+            <span class="start-menu-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="start-menu-item start-menu-contact" href="#contact">
+            <span class="start-menu-number">3号車</span>
+            <span class="start-menu-text">問い合わせ・申し込みをする</span>
+            <span class="start-menu-arrow" aria-hidden="true">→</span>
+        </a>
+        </div>
+    </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-heading">
+            <h2>HAKALOGとは</h2>
+        </div>
+
+        <div class="about-content">
+            <p class="about-lead">
+                廃棄物収集業務を、スマホとAIでもっとかんたんに。
+            </p>
+            <p class="about-text">
+                写真を撮るだけで廃棄物を記録し、AIが数量を判定。<br>
+                収集コースの確認から実績管理まで、日々の業務を一つに繋ぐアプリです。
+            </p>
+            <div class="about-grid">
+                <article class="about-card">
+                    <img src="images/about-photo-record.png" alt="スマホで廃棄物を撮影する様子">
+                    <h3>写真でかんたん記録</h3>
+                    <p>現場で写真を撮るだけで、回収内容を手軽に記録できます。</p>
+                </article>
+                <article class="about-card">
+                    <img src="images/about-ai-check.png" alt="AIが廃棄物の数量を判定するイメージ">
+                    <h3>AIが数量を判定</h3>
+                    <p>撮影した写真をもとに、AIが廃棄物の数量確認を支援します。</p>
+                </article>
+                <article class="about-card">
+                    <img src="images/about-management.png" alt="収集実績を管理する画面">
+                    <h3>実績をまとめて管理</h3>
+                    <p>収集コースや日々の実績をまとめ、次の業務に活かせます。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="worries" id="worries">
+        <div class="about-heading">
+            <h2>こんな悩み、ありませんか？</h2>
+        </div>
+        <div class="worries-content">
+            <p class="worries-lead">
+            日々の回収業務で、こんな困りごとはありませんか？
+            </p>
+            <div class="worries-grid">
+            <article class="worry-card js-reveal js-reveal--delay-1">
+                <div class="worry-image">
+                <img
+                    src="images/worry-paper.png"
+                    alt="紙や写真で回収内容を記録している様子"
+                >
+                </div>
+                <h3>記録が紙や写真に<br>散らばっている</h3>
+                <p>
+                回収内容や数量を控えても、あとから探したり転記したりする手間がかかる。
+                </p>
+            </article>
+
+            <article class="worry-card js-reveal js-reveal--delay-2">
+                <div class="worry-image">
+                <img
+                    src="images/worry-check.png"
+                    alt="現場の回収情報を確認している様子"
+                >
+                </div>
+                <h3>現場の確認に<br>時間がかかる</h3>
+                <p>
+                コースや前回の状況を確認するために、電話や紙の資料を何度も見返してしまう。
+                </p>
+            </article>
+
+            <article class="worry-card js-reveal js-reveal--delay-3">
+                <div class="worry-image">
+                <img
+                    src="images/worry-data.png"
+                    alt="回収実績のデータを確認している様子"
+                >
+                </div>
+                <h3>集めた実績を<br>活かしきれない</h3>
+                <p>
+                データは残っていても、日々の改善や次の判断につながる形で整理できていない。
+                </p>
+            </article>
+            </div>
+
+                <p class="worries-message">
+                HAKALOGなら、記録から振り返りまでをひとつに。
+                </p>
+            </div>
+    </section>
+        <div class="before-after-content">
+            <div class="before-after-heading">
+                <h2>導入前後で、業務はこう変わります</h2>
+            </div>
+            <div class="before-after-grid">
+                <article class="before-after-card">
+                <div class="before-after-photo before-photo">
+                    <img
+                        src="images/before.png"
+                        alt="スマホ撮影とデータ管理を行っている様子"
+                    >
+                    <h3>Before</h3>
+                </div>
+
+                <p>
+                    紙の伝票への手書きや、写真・記録の確認に時間がかかっている状態です。
+                </p>
+                </article>
+
+                <article class="before-after-card">
+                <div class="before-after-photo after-photo">
+                    <img
+                        src="images/after.png"
+                        alt="スマホ撮影とデータ管理を行っている様子"
+                    >
+                    <h3>After</h3>
+                </div>
+
+                <p>
+                    スマホで撮影するだけで記録が完了。データをまとめて確認・共有できます。
+                </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="how-to-use" id="how-to-use">
+        <div class="about-heading">
+            <h2>HAKALOGでできること</h2>
+        </div>
+
+        <div class="how-to-use-content">
+            <p class="how-to-use-lead">
+            日々の回収業務を、記録から管理までスムーズに。
+            </p>
+
+            <div class="how-to-use-list">
+            <article class="how-to-use-item">
+                <div class="how-to-use-text">
+                <span class="how-to-use-number">1</span>
+                <div>
+                    <h3>コース・現場の確認</h3>
+                    <p>回収先や前回の記録を確認して、迷わず現場へ向かえます。</p>
+                </div>
+                </div>
+
+                <div class="how-to-use-image">
+                <img
+                    src="images/how-to-course.png"
+                    alt="回収コースと現場情報を確認する画面"
+                >
+                </div>
+            </article>
+
+            <article class="how-to-use-item">
+                <div class="how-to-use-text">
+                <span class="how-to-use-number">2</span>
+                <div>
+                    <h3>写真で業務記録</h3>
+                    <p>現場で撮影するだけで、回収内容をかんたんに記録できます。</p>
+                </div>
+                </div>
+
+                <div class="how-to-use-image">
+                <img
+                    src="images/how-to-photo.png"
+                    alt="スマホで廃棄物を撮影して記録する様子"
+                >
+                </div>
+            </article>
+
+            <article class="how-to-use-item">
+                <div class="how-to-use-text">
+                <span class="how-to-use-number">3</span>
+                <div>
+                    <h3>記録の確認</h3>
+                    <p>記録した内容をすぐに見返し、必要な情報を確認できます。</p>
+                </div>
+                </div>
+
+                <div class="how-to-use-image">
+                <img
+                    src="images/how-to-record.png"
+                    alt="記録内容を一覧で確認する画面"
+                >
+                </div>
+            </article>
+
+            <article class="how-to-use-item">
+                <div class="how-to-use-text">
+                <span class="how-to-use-number">4</span>
+                <div>
+                    <h3>コース・実績管理</h3>
+                    <p>回収実績をまとめて管理し、次の業務改善に活かせます。</p>
+                </div>
+                </div>
+
+                <div class="how-to-use-image">
+                <img
+                    src="images/how-to-management.png"
+                    alt="コースと回収実績を管理する画面"
+                >
+                </div>
+            </article>
+            </div>
+        </div>
+        </section>
+        <section class="movie" id="movie">
+            <div class="about-heading">
+                <h2>動画で見るHAKALOG</h2>
+            </div>
+            <div class="movie-content">
+                <div class="movie-text">
+                    <p class="movie-lead">
+                        簡単操作で、現場の業務をもっとスムーズに。
+                    </p>
+                    <p>
+                        写真を撮るだけで記録ができるHAKALOG.<br>
+                        実際の使い方を動画でご紹介します。
+                    </p>
+                </div>
+                <div class="movie-player">
+                    <!-- youtube動画URL-->
+                    <div class="movie-player movie-placeholder">
+                    <span class="movie-play-button" aria-hidden="true">▶</span>
+                    <p>動画準備中</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta" id="contact">
+            <div class="cta-content">
+                <p class="cta-label">まずはお気軽にご相談ください</p>
+
+                <h2>
+                HAKALOGで、日々の<br>
+                回収業務をもっとスムーズに。
+                </h2>
+
+                <p class="cta-text">
+                導入に関するご質問やご相談を承ります。<br>
+                お気軽にお問い合わせください。
+                </p>
+
+                <a class="cta-button" href="#form">
+                お問い合わせ・お申し込み
+                <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="about-heading">
+                <h2>よくある質問</h2>
+            </div>
+
+            <div class="faq-content">
+                <details class="faq-item">
+                <summary>HAKALOGはどのような業務に使えますか？</summary>
+                <p>
+                    廃棄物収集の現場で、回収内容の記録、写真撮影、コース確認、実績管理などにお使いいただけます。
+                </p>
+                </details>
+
+                <details class="faq-item">
+                <summary>スマートフォンだけで利用できますか？</summary>
+                <p>
+                    現場での記録はスマートフォンで行えます。収集したデータは、パソコンからも確認・管理できます。
+                </p>
+                </details>
+
+                <details class="faq-item">
+                <summary>導入にあたり特別な機器は必要ですか？</summary>
+                <p>
+                    基本的には、カメラ付きのスマートフォンがあればご利用いただけます。詳しい条件はお問い合わせください。
+                </p>
+                </details>
+
+                <details class="faq-item">
+                <summary>料金について相談できますか？</summary>
+                <p>
+                    ご利用人数や運用に合わせてご案内します。まずはお気軽にお問い合わせください。
+                </p>
+                </details>
+            </div>
+        </section>
+        <section class="contact-form" id="form">
+            <div class="about-heading">
+                <h2>お問い合わせフォーム</h2>
+            </div>
+
+            <div class="contact-form-content">
+                <p class="contact-form-lead">
+                導入のご相談・お申し込みは、こちらからお気軽にお問い合わせください。
+                </p>
+
+                <form class="contact-form-body">
+                <div class="form-row">
+                    <div class="form-field">
+                    <label for="company">会社名・団体名 <span>必須</span></label>
+                    <input id="company" name="company" type="text" required>
+                    </div>
+
+                    <div class="form-field">
+                    <label for="name">お名前 <span>必須</span></label>
+                    <input id="name" name="name" type="text" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                    <label for="email">メールアドレス <span>必須</span></label>
+                    <input id="email" name="email" type="email" required>
+                    </div>
+
+                    <div class="form-field">
+                    <label for="tel">電話番号</label>
+                    <input id="tel" name="tel" type="tel">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="type">お問い合わせ種別 <span>必須</span></label>
+                    <select id="type" name="type" required>
+                    <option value="">選択してください</option>
+                    <option value="consultation">導入について相談したい</option>
+                    <option value="demo">デモを見たい</option>
+                    <option value="estimate">見積もりがほしい</option>
+                    <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">お問い合わせ内容 <span>必須</span></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <p class="form-note">
+                    送信前に、個人情報の取り扱いをご確認ください。
+                </p>
+
+                <button class="form-submit" type="submit">
+                    この内容で送信する
+                </button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-company">
+                <a class="footer-logo" href="#top">HAKALOG</a>
+
+                <p>
+                    廃棄物収集業務を、<br>
+                    スマホとAIでもっとかんたんに。
+                </p>
+                </div>
+
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                <a href="#features">特徴</a>
+                <a href="#about">HAKALOGとは</a>
+                <a href="#worries">よくあるお悩み</a>
+                <a href="#how-to-use">HAKALOGでできること</a>
+                <a href="#faq">よくある質問</a>
+                <a href="#form">お問い合わせ</a>
+                </nav>
+
+                <div class="footer-info">
+                <p>株式会社サンプル</p>
+                <p>
+                    〒000-0000<br>
+                    東京都○○区○○ 1-2-3
+                </p>
+                <p>
+                    TEL：00-0000-0000<br>
+                    MAIL：info@example.com
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <small>© 2026 HAKALOG. All Rights Reserved.</small>
+                <a href="#">プライバシーポリシー</a>
+            </div>
+        </footer>
+        
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
