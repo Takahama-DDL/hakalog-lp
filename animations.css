@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_bg {
+  position: absolute;
+  inset: -4%;
+  z-index: 0;
+  pointer-events: none;
+  background: url("../images/hero-image-wide-textless.png") center / cover no-repeat;
+  animation: hero-drive 12s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+/* @keyframes hero-drive {
+  from {
+    transform: scale(1) translateX(-4%);
+  }
+
+  to {
+    transform: scale(1) translateX(4%);
+  }
+} */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg {
+    animation: none;
+  }
+}
